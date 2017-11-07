@@ -7,9 +7,9 @@
         <div class="jumbotron">
           <div class="container">
             <h1>Laboratorio de Redes y Electrónica</h1>
-            <p>Por favor, ingrese los valores</p>
+            <p>Por favor, inicie su sesion para continuar</p>
             <p>
-              <a href="login.php" class="btn btn-primary btn-lg">Login</a>
+              <a href="login.php" class="btn btn-primary btn-danger">Iniciar sesion</a>
             </p>
           </div>
         </div>

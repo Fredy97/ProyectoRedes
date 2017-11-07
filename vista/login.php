@@ -9,7 +9,8 @@
             <div class="panel panel-default">
               <div class="panel-body">
               <form id="loginForm" action="validarCode.php" method="POST" role="form">
-                <legend>Iniciar Sesión</legend>
+                 <br>
+                <br> <legend>Iniciar Sesión</legend>
               
                 <div class="form-group">
                   <label for="matricula">Matricula</label>
