@@ -8,7 +8,7 @@
             <div class="panel panel-default">
               
               <div class="panel-body">
-              <form id="loginForm" action="RegistroCode.php" method="POST" role="form">
+              <form action="RegistroCode.php" method="POST" role="form">
                 <br>
                 <br> <legend>Registro de Usuarios</legend>
                
@@ -50,7 +50,7 @@
 
               
               
-                <button type="submit" class="btn btn-success">Ingresar</button>
+                <button type="submit" class="btn btn-success">Registrar</button>
               </form>
               </div>
             </div>

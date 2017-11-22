@@ -26,7 +26,7 @@ class LoginphpControlador{
 
 
 
-	public function registro($matricula,$nombre,$paterno,$materno,$username,$password,$email,$privilegio){
+	public function registrar($matricula,$nombre,$paterno,$materno,$username,$password,$email,$privilegio){
 
 		$obj_loginphp = new loginphp();
 		$obj_loginphp->setMatricula($matricula);

@@ -12,13 +12,18 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
+            
+            <?php if(!isset($_SESSION["loginphp"])){ ?>
             <li class="active"><a href="index.php">Inicio</a></li>
-            <?php if(isset($_SESSION["loginphp"])){ ?>
             <li><a href="login.php">Login</a></li>
             <li><a href="registro.php">Registro</a></li>
-            <?php}else {?>
-            <li class="active"><a href="admin.php">Registro de Actividad</a></li>
-            <?php }?>
+          
+            <?php } else {?>
+            <?php if($_SESSION["loginphp"]["privilegio"] == 1){ ?>
+             <li class="active"><a href="admin.php">Registro de Actividad</a></li>
+             <?php } else {?>
+              <li class="active"><a href="admin.php">Registro de Actividad Alumno</a></li>
+            <?php }}?>
           </ul>
         </div><!--/.nav-collapse -->
       </div>

@@ -20,10 +20,10 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
 	$txtPrivilegio = 2;
 
 
- if(LoginphpControlador::registro($txtMatricula, $txtNombre, $txtPaterno, $txtMaterno, $txtUsername, $txtPassword,$txtEmail, $txtPrivilegio )){
+ if(LoginphpControlador::registrar($txtMatricula, $txtNombre, $txtPaterno, $txtMaterno, $txtUsername, $txtPassword,$txtEmail, $txtPrivilegio )){
  	$loginphp		= UsuarioControlador::getUsuario($txtMatricula, $txtPassword);
 
- 	$_SESSION["usuario"] = array(
+ 	$_SESSION["loginphp"] = array(
  		"matricula"	=> $loginphp->getMatricula(),
   		"nombre"	=> $loginphp->getNombre(),
  		"paterno"	=> $loginphp->getPaterno(),
